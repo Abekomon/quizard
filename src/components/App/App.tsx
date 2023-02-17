@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { getApiData } from '../../apiCalls';
 
 class App extends Component {
   constructor(props:any) {
@@ -9,11 +10,14 @@ class App extends Component {
     }
   }
 
-  
+  componentDidMount() {
+    getApiData().then((data:any) => console.log(data))
+  }
   render() {
     return (
-      <>
-      </>
+      <h1>
+        Quizard
+      </h1>
     );
   }
 }
