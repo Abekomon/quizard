@@ -6,13 +6,22 @@ class App extends Component {
   constructor(props:any) {
     super(props)
     this.state = {
-      quizData: []
+      quizData: [], 
+      error: {}
     }
   }
 
   componentDidMount() {
-    getApiData().then((data:any) => console.log(data))
+    getApiData().then((data:any) => {
+      this.setState({quizData: data})
+    })
+    .catch((error:object) => {
+      this.setState({error:error})
+    })
+
   }
+
+
   render() {
     return (
       <h1>
