@@ -1,7 +1,7 @@
 import React from 'react'
 import './Question.css'
 
-const Question = () => {
+const Question: object = () => {
   return (
     <div className='card-container'>
       <h3 className='question'></h3>
