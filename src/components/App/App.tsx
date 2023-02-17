@@ -7,26 +7,26 @@ class App extends Component {
     super(props)
     this.state = {
       quizData: [], 
+      favorites: [],
       error: {}
     }
   }
 
   componentDidMount() {
-    getApiData().then((data:any) => {
+    getApiData().then((data:object) => {
       this.setState({quizData: data})
     })
     .catch((error:object) => {
       this.setState({error:error})
     })
-
   }
 
 
   render() {
     return (
-      <h1>
-        Quizard
-      </h1>
+      <main>
+        <h1>Quizard</h1>
+      </main>
     );
   }
 }
