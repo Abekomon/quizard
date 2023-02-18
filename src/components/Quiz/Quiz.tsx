@@ -4,19 +4,19 @@ import './Quiz.css'
 
 
 const Quiz: React.FunctionComponent<any> = props => {
-const makeCards: any = props.questions.map((item: any)  => {
+const makeCards: any = props.questions.map((item: any, index: any)  => {
   return (
     <Question
     question={item.question}
     answer={item.answer}
     id={Date.now()}
-    key={item.id} 
+    key={index} 
     />
   )
 })
 
 return (
-  <div>
+  <div className='quiz-container'>
     {makeCards}
   </div>
 )

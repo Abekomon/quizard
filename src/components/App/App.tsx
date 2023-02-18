@@ -27,8 +27,8 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: a
 
   render() {
     return (
-      <main>
-        <h1>Quizard</h1>
+      <main className='app-container'>
+        <h1 className='heading'>Quizard</h1>
         <Quiz questions={this.state.quizData}/>
       </main>
     );
