@@ -6,7 +6,7 @@ const Question: React.FunctionComponent<any> = ({ question, answer, addFavorite,
     <div className='card-container'>
       <h3 className='question'>{question}</h3>
       <p className='answer hidden'>{answer}</p>
-      <button className='fav-btn' onClick={(event) => addFavorite(event.target)}>Add To Favorites</button>
+      <button className='fav-btn' onClick={() => addFavorite(id)}>Add To Favorites</button>
     </div>
   )
 }
