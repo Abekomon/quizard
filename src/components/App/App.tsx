@@ -3,8 +3,8 @@ import './App.css';
 import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
 
-class App extends React.Component<{}, {quizData: object, favorites:any, error: any}> {
-  constructor(props:any) {
+class App extends React.Component<{}, {quizData: object, favorites:any, error: object}> {
+  constructor(props: any) {
     super(props)
     this.state = {
       quizData: [], 
@@ -16,10 +16,10 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: a
 
 
   componentDidMount() {
-    getApiData().then((data:object) => {
+    getApiData().then((data: object) => {
       this.setState({quizData: data})
     })
-    .catch((error:object) => {
+    .catch((error: object) => {
       this.setState({error:error})
     })
   }
