@@ -1,0 +1,19 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px navy solid;
+  margin: 5px;
+  width: 20vw;
+  height: 35vh;
+  background-color: lightblue;
+  text-align: center;
+  justify-content: space-around;
+  align-items:center
+}
+
+.fav-btn {
+  width: 50%;
+  height: 10%;
+  border-radius: 5px;
+  border: goldenrod 2 px;
+}
