@@ -6,6 +6,10 @@
   align-content: center;
 }
 
+.app-container > a {
+  text-decoration: none;
+}
+
 .heading {
   height: 8vh;
   margin-left: 45vw;

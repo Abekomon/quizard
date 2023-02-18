@@ -1,10 +1,11 @@
 import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom'
 import './App.css';
 import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
 
-class App extends React.Component<{}, {quizData: object, favorites:any, error: any}> {
-  constructor(props:any) {
+class App extends React.Component<{}, {quizData: object, favorites:any, error: object}> {
+  constructor(props: any) {
     super(props)
     this.state = {
       quizData: [], 
@@ -16,10 +17,10 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: a
 
 
   componentDidMount() {
-    getApiData().then((data:object) => {
+    getApiData().then((data: object) => {
       this.setState({quizData: data})
     })
-    .catch((error:object) => {
+    .catch((error: object) => {
       this.setState({error:error})
     })
   }
@@ -28,8 +29,11 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: a
   render() {
     return (
       <main className='app-container'>
-        <h1 className='heading'>Quizard</h1>
-        <Quiz questions={this.state.quizData}/>
+        <Link to='/'><h1 className='heading'>Quizard</h1></Link> 
+        <Switch>
+          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData}/> } />
+          <Route exact path='/favorites' render={ () => <h2>Dis Mah Favrite Page</h2> } />
+        </Switch>
       </main>
     );
   }
