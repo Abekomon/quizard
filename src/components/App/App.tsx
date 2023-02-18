@@ -5,7 +5,7 @@ import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
 import Favorites from '../Favorites/Favorites';
 
-class App extends React.Component<{}, {quizData: object, favorites:any, error: object}> {
+class App extends React.Component<{}, {quizData: any[], favorites:any, error: object}> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -15,8 +15,11 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: o
     }
   }
 
-  addFavorite = (question: object) => {
-    this.setState({favorites: [...this.state.favorites, question]})
+  addFavorite = (e:any, id:number) => {
+    const question = this.state.quizData.find(quest => quest.id === id)
+    if(!this.state.favorites.includes(question)) {
+      this.setState({favorites: [...this.state.favorites, question]})
+    }
   }
 
   componentDidMount() {
