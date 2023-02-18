@@ -6,13 +6,14 @@ const Favorites: React.FunctionComponent<any> = props => {
   const cards: Array<any> = props.questions.map((
     item: {
       question: string,
-      answer: string
+      answer: string,
+      id: number
     }, index: number) => {
     return (
       <Question
       question={item.question}
       answer={item.answer}
-      id={Date.now()}
+      id={item.id}
       key={index} 
       />
     )
