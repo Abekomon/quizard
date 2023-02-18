@@ -4,7 +4,11 @@ import './Quiz.css'
 
 
 const Quiz: React.FunctionComponent<any> = props => {
-const makeCards: any = props.questions.map((item: any, index: any)  => {
+const makeCards: Array<any> = props.questions.map((
+  item: {
+    question: string,
+    answer: string
+  }, index: number) => {
   return (
     <Question
     question={item.question}
