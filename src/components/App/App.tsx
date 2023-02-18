@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
 
-class App extends Component {
+class App extends React.Component<{}, {quizData: object, favorites:any, error: any}> {
   constructor(props:any) {
     super(props)
     this.state = {
@@ -12,6 +12,8 @@ class App extends Component {
       error: {}
     }
   }
+
+
 
   componentDidMount() {
     getApiData().then((data:object) => {
