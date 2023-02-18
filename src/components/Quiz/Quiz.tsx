@@ -1,6 +1,6 @@
 import Question from '../Question/Question'
+import {Link} from 'react-router-dom'
 import './Quiz.css'
-
 
 
 const Quiz: React.FunctionComponent<any> = props => {
@@ -22,9 +22,12 @@ const makeCards: Array<any> = props.questions.map((
 })
 
 return (
-  <div className='quiz-container'>
-    {makeCards}
-  </div>
+  <>
+    <Link to="/favorites"><h3 className='favorites-link'>See Favorites!</h3></Link>
+    <div className='quiz-container'>
+      {makeCards}
+    </div>
+  </>
 )
 
 }
