@@ -22,7 +22,7 @@ const Favorites: React.FunctionComponent<any> = props => {
   return(
     <>
       <Link to='/'><h3 className='back-link'>Back to Home!</h3></Link>
-      <div className='favorites-container'>
+      <div className='quiz-container'>
         {cards}
       </div>
     </>
