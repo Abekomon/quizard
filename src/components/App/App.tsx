@@ -15,24 +15,31 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: o
     }
   }
 
-
+  addFavorite = (question: object) => {
+    this.setState({favorites: [...this.state.favorites, question]})
+  }
 
   componentDidMount() {
-    getApiData().then((data: object) => {
-      this.setState({quizData: data})
+    getApiData().then((data: Array<any>) => {
+      const mappedData = data.map((item, index) => {
+        return {
+          id: index,
+          ...item
+        }
+      })
+      this.setState({quizData: mappedData})
     })
     .catch((error: object) => {
       this.setState({error:error})
     })
   }
 
-
   render() {
     return (
       <main className='app-container'>
         <Link to='/'><h1 className='heading'>Quizard</h1></Link> 
         <Switch>
-          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData}/> } />
+          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData} addFavorite={this.addFavorite}/> } />
           <Route exact path='/favorites' render={ () => <Favorites questions={this.state.favorites}/> } />
         </Switch>
       </main>
