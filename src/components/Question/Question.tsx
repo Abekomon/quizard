@@ -2,7 +2,6 @@ import React from 'react'
 import './Question.css'
 
 const Question: React.FunctionComponent<any> = ({ question, answer, id }) => {
-  console.log(question)
   return (
     <div className='card-container'>
       <h3 className='question'>{question}</h3>
