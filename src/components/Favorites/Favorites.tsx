@@ -1,5 +1,6 @@
 import Question from '../Question/Question'
 import './Favorites.css'
+import { Link } from 'react-router-dom'
 
 const Favorites: React.FunctionComponent<any> = props => {
   const cards: Array<any> = props.questions.map((
@@ -18,9 +19,12 @@ const Favorites: React.FunctionComponent<any> = props => {
   })
 
   return(
-    <div className='favorites-container'>
-      {cards}
-    </div>
+    <>
+      <Link to='/'><h3 className='back-link'>Back to Home!</h3></Link>
+      <div className='favorites-container'>
+        {cards}
+      </div>
+    </>
   )
 }
 
