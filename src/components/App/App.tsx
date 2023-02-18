@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom'
 import './App.css';
 import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
+import Favorites from '../Favorites/Favorites';
 
 class App extends React.Component<{}, {quizData: object, favorites:any, error: object}> {
   constructor(props: any) {
@@ -32,7 +33,7 @@ class App extends React.Component<{}, {quizData: object, favorites:any, error: o
         <Link to='/'><h1 className='heading'>Quizard</h1></Link> 
         <Switch>
           <Route exact path='/' render={ () => <Quiz questions={this.state.quizData}/> } />
-          <Route exact path='/favorites' render={ () => <h2>Dis Mah Favrite Page</h2> } />
+          <Route exact path='/favorites' render={ () => <Favorites questions={this.state.favorites}/> } />
         </Switch>
       </main>
     );
