@@ -1,21 +1,25 @@
-import React from 'react'
-import './Quiz.css'
 import Question from '../Question/Question'
-
-interface QuizQuestions {
-  category: string,
-  question: string,
-  answer:string
-}
+import './Quiz.css'
 
 
-const Quiz:any = ({category, question, answer}: QuizQuestions ) => {
-    // const allQuestions: object = props.quizData.map(single => {
-    //   return (
-    //     <Question 
-    //     question={single.question}
-    //     />
-    //   )
+
+const Quiz: React.FunctionComponent<any> = props => {
+const makeCards: any = props.questions.map((item: any)  => {
+  return (
+    <Question
+    question={item.question}
+    answer={item.answer}
+    id={Date.now()}
+    key={item.id} 
+    />
+  )
+})
+
+return (
+  <div>
+    {makeCards}
+  </div>
+)
 
 }
 
