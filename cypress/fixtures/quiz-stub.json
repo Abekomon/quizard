@@ -1,0 +1,13 @@
+[
+  {"id": 0, "category": "general", "question": "Who was the first director of Britain's National Theatre", "answer": "Laurence Olivier"},
+   
+  {"id": 1, "category": "general", "question": "Which Country Currently Holds The Record (2010) For The Hottest Temperature Ever Recorded", "answer": "Libya"},
+   
+  {"id": 2, "category": "general", "question": "Who replaced moses as the prophet of the israelites", "answer": "Joshua"},
+   
+  {"id": 3, "category": "general", "question": "What is the name of the cryptography machine used by the german's in WW2?", "answer": "Enigma"},
+   
+  {"id": 4, "category": "general", "question": "Chemical compounds or mixtures that undergo rapid …consequent production of sudden pressure effects.", "answer": "Explosives"},
+  
+  {"id": 5, "category": "general", "question": "What grew when the doll growing up skipper's arm was turned", "answer": "Breasts"}
+]
