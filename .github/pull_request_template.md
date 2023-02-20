@@ -2,7 +2,7 @@ Description:
 
 I did this thing....
 
-Neccesary checkmarks:
+Necessary checkmarks:
 
     [] All Tests are Passing
 
