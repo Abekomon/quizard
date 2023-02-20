@@ -9,7 +9,7 @@ const Question: React.FunctionComponent<any> = ({ question, answer, addFavorite,
       <h3 className='question'>{question}</h3>
       <p className='answer hidden'>{answer}</p>
       {document.URL === "http://localhost:3000/" ? 
-      <button className='fav-btn' onClick={() => addFavorite(id)}>Add To Favorites</button> : <button onClick={() => deleteFav(id)}>Remove</button>
+      <button className='fav-btn' data-cy={`button-${id}`} onClick={() => addFavorite(id)}>Add To Favorites</button> : <button  data-cy={`button-${id}`} onClick={() => deleteFav(id)}>Remove</button>
       }
     </div>
   )
