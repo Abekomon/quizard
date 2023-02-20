@@ -22,6 +22,11 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
     }
   }
 
+  deleteFavorite = (id:number) => {
+    const filterFavs = this.state.favorites.filter((item: any) => item.id !== id)
+    this.setState({favorites: filterFavs})
+  }
+
   componentDidMount() {
     getApiData().then((data: Array<any>) => {
       const mappedData = data.map((item, index) => {
@@ -42,8 +47,8 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
       <main className='app-container'>
         <Link to='/'><h1 className='heading'>Quizard</h1></Link> 
         <Switch>
-          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData} addFavorite={this.addFavorite}/> } />
-          <Route exact path='/favorites' render={ () => <Favorites questions={this.state.favorites}/> } />
+          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData} addFavorite={this.addFavorite} /> } />
+          <Route exact path='/favorites' render={ () => <Favorites questions={this.state.favorites} deleteFav={this.deleteFavorite}/> } />
         </Switch>
       </main>
     );
