@@ -15,6 +15,7 @@ const Favorites: React.FunctionComponent<any> = props => {
       answer={item.answer}
       id={item.id}
       key={index} 
+      deleteFav={props.deleteFav}
       />
     )
   })
