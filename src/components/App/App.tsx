@@ -4,6 +4,7 @@ import './App.css';
 import { getApiData } from '../../apiCalls';
 import  Quiz  from '../Quiz/Quiz';
 import Favorites from '../Favorites/Favorites';
+import Categories from '../Categories/Categories';
 
 class App extends React.Component<{}, {quizData: any[], favorites:any, error: object}> {
   constructor(props: any) {
