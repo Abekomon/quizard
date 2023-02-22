@@ -1,6 +1,6 @@
-export const getApiData: any = () => {
-    const category:string = 'general'
-    const limit:number = 20
+export const getApiData: any = (category: string, limit: number) => {
+    // const category:string = 'general'
+    // const limit:number = 20
     const apiKey:string = 'Tlpiy7d9s9RpAkcN1ZI/mw==w80MkFur50vVZGkJ'
 
     return fetch(`https://api.api-ninjas.com/v1/trivia?category=${category}&limit=${limit}`, {

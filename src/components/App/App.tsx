@@ -35,7 +35,6 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
           ...item
         }
       })
-      console.log(mappedData)
       this.setState({quizData: mappedData})
     })
     .catch((error: object) => {
