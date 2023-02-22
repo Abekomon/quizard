@@ -21,6 +21,8 @@ const makeCards: Array<any> = props.questions.map((
   )
 })
 
+
+
 return (
   <>
     <Link to="/favorites"><h3 className='favorites-link'>See Favorites!</h3></Link>
