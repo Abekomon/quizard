@@ -1,15 +1,16 @@
 import './CatCard.css'
 
 interface CatCardProps {
-    name: string,
-    path: string
+    category: string,
+    title: string,
+    image: string
 }
 
-const CatCard = ({}, props: CatCardProps) => {
+const CatCard: React.FunctionComponent<any> = ({}, props: CatCardProps) => {
     return (
         <div className='cat-wrapper'>
-            <img src={props.path} />
-            <h2>{props.name}</h2>
+            <img src={props.image} />
+            <h2>{props.title}</h2>
         </div>
     )
 }
