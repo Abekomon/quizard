@@ -1,4 +1,5 @@
 import './CatCard.css'
+import { Link } from 'react-router-dom'
 
 interface CatCardProps {
     category: string,
@@ -9,10 +10,12 @@ interface CatCardProps {
 
 const CatCard: React.FunctionComponent<any> = (props: CatCardProps) => {
     return (
-        <div className='cat-wrapper' onClick={() => props.APICall(props.category)}>
-            <img src={props.image} />
-            <h2>{props.title}</h2>
-        </div>
+        <Link to='/quiz'>
+            <div className='cat-wrapper' onClick={() => props.APICall(props.category)}>
+                <img src={props.image} />
+                <h2>{props.title}</h2>
+            </div>
+        </Link>
     )
 }
 
