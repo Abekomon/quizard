@@ -28,7 +28,7 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
   }
 
   componentDidMount() {
-    getApiData().then((data: Array<any>) => {
+    getApiData("general").then((data: Array<any>) => {
       const mappedData = data.map((item, index) => {
         return {
           id: index,
