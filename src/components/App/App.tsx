@@ -48,7 +48,8 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
       <main className='app-container'>
         <Link to='/'><h1 className='heading'>Quizard</h1></Link> 
         <Switch>
-          <Route exact path='/' render={ () => <Quiz questions={this.state.quizData} addFavorite={this.addFavorite} /> } />
+          <Route exact path='/' render={ () => <Categories /> }/>
+          <Route exact path='/quiz' render={ () => <Quiz questions={this.state.quizData} addFavorite={this.addFavorite} /> } />
           <Route exact path='/favorites' render={ () => <Favorites questions={this.state.favorites} deleteFav={this.deleteFavorite}/> } />
         </Switch>
       </main>

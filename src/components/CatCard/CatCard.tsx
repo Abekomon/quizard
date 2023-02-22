@@ -6,7 +6,8 @@ interface CatCardProps {
     image: string
 }
 
-const CatCard: React.FunctionComponent<any> = ({}, props: CatCardProps) => {
+const CatCard: React.FunctionComponent<any> = (props: CatCardProps) => {
+    console.log(props.title)
     return (
         <div className='cat-wrapper'>
             <img src={props.image} />

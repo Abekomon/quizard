@@ -12,7 +12,7 @@ const Categories: React.FunctionComponent<any> = () => {
         <div className='cat-container'>
             <CatCard 
             category="general"
-            title="General"
+            title={"General"}
             image=""
             />
             <CatCard 
