@@ -1,0 +1,15 @@
+.cat-link {
+  width: 32%;
+  height: 15rem;
+}
+
+.cat-wrapper {
+  width: 100%;
+  height: 100%;
+  background: forestgreen;
+}
+
+.cat-wrapper h2 {
+  margin: 0;
+  text-align: center;
+}
