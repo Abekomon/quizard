@@ -9,7 +9,7 @@
 
 .heading {
   height: 8vh;
-  margin-left: 45vw;
+  text-align: center;
   font-size: 60px;
   -webkit-text-stroke: 2px navy;
 	-webkit-text-fill-color: lightblue;
