@@ -10,7 +10,7 @@ interface CatCardProps {
 
 const CatCard: React.FunctionComponent<any> = (props: CatCardProps) => {
     return (
-        <Link to='/quiz'>
+        <Link to='/quiz' className='cat-link'>
             <div className='cat-wrapper' onClick={() => props.APICall(props.category)}>
                 <img src={props.image} />
                 <h2>{props.title}</h2>
