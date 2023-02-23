@@ -5,10 +5,13 @@
 
 .app-container > a {
   text-decoration: none;
+  width: 33%;
+  margin: 4% auto 2%;
 }
 
 .heading {
   height: 8vh;
+  margin: 0;
   text-align: center;
   font-size: 60px;
   -webkit-text-stroke: 2px navy;
