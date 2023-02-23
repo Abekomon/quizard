@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.app-container > a {
+.home-link {
   text-decoration: none;
   width: 33%;
   margin: 4% auto 2%;
