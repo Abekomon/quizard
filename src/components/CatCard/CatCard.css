@@ -1,12 +1,25 @@
 .cat-link {
   width: 32%;
   height: 15rem;
+  text-decoration: none;
+}
+
+.cat-link, .catlink:visited {
+  color: maroon;
+}
+
+.cat-wrapper:hover {
+  transform: scale(1.15);
+
 }
 
 .cat-wrapper {
   width: 100%;
   height: 100%;
   background: forestgreen;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: transform 100ms ease-in-out;
 }
 
 .cat-wrapper h2 {
