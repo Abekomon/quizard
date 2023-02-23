@@ -1,9 +1,6 @@
 .app-container {
-  background-image: linear-gradient(to right, navy 0%, skyblue 50%, navy 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .app-container > a {
