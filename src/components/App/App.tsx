@@ -41,6 +41,8 @@ class App extends React.Component<AppProps, AppState> {
   clearData = () => {
     this.setState({quizData: []})
   }
+
+
   
 
   categoryAPICall = (endpoint: string) => {
