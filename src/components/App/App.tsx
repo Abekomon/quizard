@@ -92,10 +92,11 @@ class App extends React.Component<AppProps, AppState> {
             exact
             path="/quiz"
             render={() => (
+              this.state.quizData.length ? 
               <Quiz
                 questions={this.state.quizData}
                 addFavorite={this.addFavorite}
-              />
+              /> : <div className="loader"></div>
             )}
           />
           <Route
