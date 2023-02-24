@@ -26,9 +26,10 @@ const Favorites: React.FunctionComponent<FavoritesProps> = (props) => {
         <Link to="/quiz"><h3 className='quiz-link'>Back To Quiz</h3></Link>
         <Link to='/'><h3 className='back-link'>Back To Home</h3></Link>
       </nav>
+      {props.questions.length ?
       <div className='quiz-container'>
         {cards}
-      </div>
+      </div> : <h3 className='no-favorites-msg'>No favorites yet, add some!</h3>}
     </>
   );
 };
