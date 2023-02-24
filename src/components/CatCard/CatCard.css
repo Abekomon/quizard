@@ -28,26 +28,26 @@
   text-align: center;
 }
 
-.cat-general {
+.cat-10 {
   background-image: url('/src/assets/images/general.png');
 }
 
-.cat-music {
+.cat-12 {
   background-image: url('/src/assets/images/music.png');
 }
 
-.cat-entertainment {
+.cat-14 {
   background-image: url('/src/assets/images/entertainment.png');
 }
 
-.cat-sciencenature {
+.cat-17 {
   background-image: url('/src/assets/images/science.png');
 }
 
-.cat-sportsleisure {
+.cat-21 {
   background-image: url('/src/assets/images/sports.png');
 }
 
-.cat-historyholidays {
+.cat-23 {
   background-image: url('/src/assets/images/history.png');
 }

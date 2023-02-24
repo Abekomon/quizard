@@ -7,15 +7,15 @@ const Quiz: React.FunctionComponent<any> = props => {
 const makeCards: Array<any> = props.questions.map((
   item: {
     question: string,
-    answer: string,
+    correct_answer: string,
     id: number
-  }, index: number) => {
+  }) => {
   return (
     <Question
     question={item.question}
-    answer={item.answer}
+    answer={item.correct_answer}
     id={item.id}
-    key={index} 
+    key={item.id} 
     addFavorite={props.addFavorite}
     />
   )

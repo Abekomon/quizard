@@ -17,12 +17,12 @@ interface CategoriesProps {
     render() {
       return (
         <div className='cat-container'>
-          <CatCard category='general' APICall={this.props.categoryAPICall} />
-          <CatCard category='music' APICall={this.props.categoryAPICall} />
-          <CatCard category='entertainment' APICall={this.props.categoryAPICall} />
-          <CatCard category='sciencenature' APICall={this.props.categoryAPICall} />
-          <CatCard category='sportsleisure' APICall={this.props.categoryAPICall} />
-          <CatCard category='historyholidays' APICall={this.props.categoryAPICall} />
+          <CatCard category='10' APICall={this.props.categoryAPICall} />
+          <CatCard category='12' APICall={this.props.categoryAPICall} />
+          <CatCard category='14' APICall={this.props.categoryAPICall} />
+          <CatCard category='17' APICall={this.props.categoryAPICall} />
+          <CatCard category='21' APICall={this.props.categoryAPICall} />
+          <CatCard category='23' APICall={this.props.categoryAPICall} />
         </div>
       );
     }
