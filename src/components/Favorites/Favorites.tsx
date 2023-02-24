@@ -13,7 +13,7 @@ const Favorites: React.FunctionComponent<FavoritesProps> = (props) => {
   const cards = props.questions.map((item, index) => (
     <Question
       question={item.question}
-      answer={item.answer}
+      answer={item.correct_answer}
       id={item.id}
       key={index}
       deleteFav={props.deleteFav}
