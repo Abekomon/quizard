@@ -22,7 +22,7 @@ class App extends React.Component<AppProps, AppState> {
     this.state = {
       quizData: [], 
       favorites: [],
-      error: {}
+      error: {},
     }
   }
 
