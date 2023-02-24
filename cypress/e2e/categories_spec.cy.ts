@@ -21,5 +21,6 @@ describe('Categories page testing', () => {
   it('should go to corresponding quiz when a category card is clicked', () => {
     cy.intercept("GET", "https://opentdb.com/api.php?amount=20&category=9", {fixture: "quiz-stub"})
     cy.get('.cat-9').click().url().should('eq', 'http://localhost:3000/quiz')
+    cy.get('.quiz-container').children().should('have.length', 3)
   })
 })
