@@ -27,4 +27,13 @@ describe('Favorites page testing', () => {
     cy.get(".back-link").click()
     cy.url().should('eq', 'http://localhost:3000/')
   })
+
+  it('should be able to navigate back to the quiz', () => {
+    cy.get(".quiz-link").click()
+    cy.url().should('eq', 'http://localhost:3000/quiz')
+  })
+  it('should be able to navigate back to thehome when logo is clicked', () => {
+    cy.get(".heading").click()
+    cy.url().should('eq', 'http://localhost:3000/')
+  })
 })

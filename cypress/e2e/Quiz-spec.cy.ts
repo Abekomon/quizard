@@ -23,4 +23,8 @@ describe('Quiz page testing', () => {
     cy.get(".fav-btn").should("have.length", 3)
     cy.get(".fav-btn").contains("Add To Favorites")
   })
+  it('should be able to navigate back to thehome when logo is clicked', () => {
+    cy.get(".heading").click()
+    cy.url().should('eq', 'http://localhost:3000/')
+  })
 })
