@@ -6,25 +6,35 @@ import  Quiz  from '../Quiz/Quiz';
 import Favorites from '../Favorites/Favorites';
 import Categories from '../Categories/Categories';
 
-class App extends React.Component<{}, {quizData: any[], favorites:any, error: object}> {
-  constructor(props: any) {
+interface AppProps {}
+
+interface AppState {
+  quizData: {id: number, [key: string]: any}[],
+  favorites: {id: number, [key: string]: any}[],
+  error: object
+}
+
+
+
+class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
     super(props)
     this.state = {
       quizData: [], 
       favorites: [],
-      error: {}
+      error: {},
     }
   }
 
   addFavorite = (id:number) => {
-    const question = this.state.quizData.find(quest => quest.id === id)
-    if(!this.state.favorites.includes(question)) {
-      this.setState({favorites: [...this.state.favorites, question]})
+    const question = this.state.quizData.find((quest: {id: number, [key: string]: any}) => quest.id === id);
+    if (question && !this.state.favorites.includes(question)) {
+      this.setState({favorites: [...this.state.favorites, question]});
     }
   }
 
   deleteFavorite = (id:number) => {
-    const filterFavs = this.state.favorites.filter((item: any) => item.id !== id)
+    const filterFavs = this.state.favorites.filter((item: {id: number, [key: string]: any}) => item.id !== id)
     this.setState({favorites: filterFavs})
   }
 
@@ -34,7 +44,7 @@ class App extends React.Component<{}, {quizData: any[], favorites:any, error: ob
   
 
   categoryAPICall = (endpoint: string) => {
-    getApiData(endpoint).then((data: Array<any>) => {
+    getApiData(endpoint).then((data: any[]) => {
       const mappedData = data.map((item, index) => {
         return {
           id: index,

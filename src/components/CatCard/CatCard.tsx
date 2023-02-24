@@ -2,20 +2,18 @@ import './CatCard.css'
 import { Link } from 'react-router-dom'
 
 interface CatCardProps {
-    category: string,
-    title: string,
-    image: string,
-    APICall: React.FunctionComponent
-}
-
-const CatCard: React.FunctionComponent<any> = (props: CatCardProps) => {
+    category: string;
+    APICall: (endpoint: string) => void;
+  }
+  
+  const CatCard: React.FC<CatCardProps> = ({ category, APICall }) => {
     return (
-        <Link to='/quiz' className='cat-link'>
-            <div className={`cat-wrapper cat-${props.category}`} onClick={() => props.APICall(props.category)}>
-            </div>
-        </Link>
-    )
-}
+      <Link to='/quiz' className='cat-link'>
+        <div className={`cat-wrapper cat-${category}`} onClick={() => APICall(category)}>
+        </div>
+      </Link>
+    );
+  };
 
 
 export default CatCard
