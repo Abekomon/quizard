@@ -13,7 +13,20 @@
   margin: 0;
   text-align: center;
   font-size: 60px;
-  -webkit-text-stroke: 2px navy;
-	-webkit-text-fill-color: lightblue;
-  color: navy;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #201f1f;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: #201f1f;
+}
+
+nav a:visited {
+  color: #201f1f;
 }

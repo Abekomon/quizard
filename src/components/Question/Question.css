@@ -5,10 +5,12 @@
   margin: 5px;
   width: 20vw;
   height: 35vh;
-  background-color: lightblue;
+  background-color: #201f1f;
   text-align: center;
   justify-content: space-around;
-  align-items:center
+  align-items:center;
+  color: #ccda46;
+  /* color subject to change */
 }
 
 .fav-btn {

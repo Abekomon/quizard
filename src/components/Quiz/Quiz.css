@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  border: turquoise 5px solid;
   border-radius: 10px;
   padding-left: 25px;
 }
