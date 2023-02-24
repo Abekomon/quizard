@@ -2,8 +2,9 @@ export {}
 
 describe('Favorites page testing', () => {
   beforeEach(() => {
-    cy.intercept("GET", "https://api.api-ninjas.com/v1/trivia?category=general&limit=20", {fixture: "quiz-stub"})
+    cy.intercept("GET", "https://opentdb.com/api.php?amount=20&category=9", {fixture: "quiz-stub"})
     cy.visit("http://localhost:3000/")
+    .get('.cat-9').click()
     .get("[data-cy='button-0']").click()
     .get("[data-cy='button-1']").click()
     .get("[data-cy='button-2']").click()
@@ -24,6 +25,15 @@ describe('Favorites page testing', () => {
   })
   it('should be able to navigate back to the homepage', () => {
     cy.get(".back-link").click()
+    cy.url().should('eq', 'http://localhost:3000/')
+  })
+
+  it('should be able to navigate back to the quiz', () => {
+    cy.get(".quiz-link").click()
+    cy.url().should('eq', 'http://localhost:3000/quiz')
+  })
+  it('should be able to navigate back to thehome when logo is clicked', () => {
+    cy.get(".heading").click()
     cy.url().should('eq', 'http://localhost:3000/')
   })
 })
