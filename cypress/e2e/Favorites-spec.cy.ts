@@ -2,8 +2,9 @@ export {}
 
 describe('Favorites page testing', () => {
   beforeEach(() => {
-    cy.intercept("GET", "https://api.api-ninjas.com/v1/trivia?category=general&limit=20", {fixture: "quiz-stub"})
+    cy.intercept("GET", "https://opentdb.com/api.php?amount=20&category=9", {fixture: "quiz-stub"})
     cy.visit("http://localhost:3000/")
+    .get('.cat-9').click()
     .get("[data-cy='button-0']").click()
     .get("[data-cy='button-1']").click()
     .get("[data-cy='button-2']").click()

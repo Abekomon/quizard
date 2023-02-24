@@ -17,7 +17,7 @@ interface CategoriesProps {
     render() {
       return (
         <div className='cat-container'>
-          <CatCard category='10' APICall={this.props.categoryAPICall} />
+          <CatCard category='9' APICall={this.props.categoryAPICall} />
           <CatCard category='12' APICall={this.props.categoryAPICall} />
           <CatCard category='14' APICall={this.props.categoryAPICall} />
           <CatCard category='17' APICall={this.props.categoryAPICall} />
