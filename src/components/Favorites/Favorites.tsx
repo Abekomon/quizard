@@ -21,7 +21,10 @@ const Favorites: React.FunctionComponent<FavoritesProps> = (props) => {
   ));
 
   return (
-    <>
+    <div className='favorites-page'>
+      <Link to="/" className="home-link">
+        <h1 className="heading">Quizard</h1>
+      </Link>
       <nav>
         <Link to="/quiz"><h3 className='quiz-link'>Back To Quiz</h3></Link>
         <Link to='/'><h3 className='back-link'>Back To Home</h3></Link>
@@ -30,7 +33,7 @@ const Favorites: React.FunctionComponent<FavoritesProps> = (props) => {
       <div className='quiz-container'>
         {cards}
       </div> : <h3 className='no-favorites-msg'>No favorites yet, add some!</h3>}
-    </>
+    </div>
   );
 };
 
