@@ -5,6 +5,7 @@ import { getApiData } from "../../apiCalls";
 import Quiz from "../Quiz/Quiz";
 import Favorites from "../Favorites/Favorites";
 import Categories from "../Categories/Categories";
+import ErrorPage from "../ErrorPage/ErrorPage";
 import he from "he";
 
 interface AppProps {}
@@ -55,6 +56,7 @@ class App extends React.Component<AppProps, AppState> {
 
   categoryAPICall = (endpoint: string) => {
     getApiData(endpoint)
+      
       .then((data: { results: QuizData[] }) => {
         const mappedData = data.results.map((item, index) => {
           const scrubbedQuestion = he.decode(item.question);
@@ -109,6 +111,9 @@ class App extends React.Component<AppProps, AppState> {
               />
             )}
           />
+          <Route>
+            <ErrorPage />
+          </Route>
         </Switch>
       </main>
     );
