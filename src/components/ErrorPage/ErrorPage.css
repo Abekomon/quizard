@@ -1,0 +1,19 @@
+.error-page {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.error-home, .error-home:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.error-home:hover {
+  cursor: pointer;
+}
+
+.error-message {
+  margin-bottom: 3%;
+}
