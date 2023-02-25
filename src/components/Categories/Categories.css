@@ -10,5 +10,11 @@
   justify-content: space-evenly;
   width: 90%;
   margin: 4% auto;
-  gap: 30px 0;
+  gap: 25px 25px;
+}
+
+@media screen and (max-width: 1290px) {
+  .cat-container {
+    justify-content: center;
+  }
 }
