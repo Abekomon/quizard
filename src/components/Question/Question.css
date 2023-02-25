@@ -1,23 +1,37 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  border: 2px navy solid;
+  border: 3px #7a8580 solid;
+  border-radius: 5px;
   margin: 5px;
   width: 20vw;
   height: 35vh;
-  background-color: #201f1f;
+  background-color: #b8b9a6;
   text-align: center;
   justify-content: space-around;
   align-items:center;
-  color: #ccda46;
-  /* color subject to change */
+  color: #607582;
 }
 
 .fav-btn {
   width: 50%;
   height: 10%;
   border-radius: 5px;
-  border: goldenrod 2 px;
+  border: #c28775 3px;
+  background-color: #c2d2cb;
+}
+
+.show-answer {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  transition: transform 100ms ease-in-out;
+}
+
+.show-answer:hover {
+  cursor: pointer;
+  color: #f5f8f3;
+  transform: scale(1.15);
 }
 
 .hidden {

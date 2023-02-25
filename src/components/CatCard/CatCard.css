@@ -10,7 +10,6 @@
 
 .cat-wrapper:hover {
   transform: scale(1.15);
-
 }
 
 .cat-wrapper {
@@ -18,6 +17,7 @@
   height: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  opacity: 70%;
   border-radius: 10px;
   border: 2px solid black;
   transition: transform 100ms ease-in-out;

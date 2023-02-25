@@ -76,9 +76,6 @@ class App extends React.Component<AppProps, AppState> {
   render() {
     return (
       <main className="app-container">
-        <Link to="/" className="home-link">
-          <h1 className="heading">Quizard</h1>
-        </Link>
         <Switch>
           <Route
             exact

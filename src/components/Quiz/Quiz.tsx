@@ -24,7 +24,10 @@ const makeCards: Array<any> = props.questions.map((
 
 
 return (
-  <>
+  <div className='quiz-page'>
+  <Link to="/" className="home-link">
+    <h1 className="heading">Quizard</h1>
+  </Link>
   <nav>
     <Link to="/favorites"><h3 className='favorites-link'>See Favorites!</h3></Link>
     <Link to="/"><h3 className='back-link'>Back To Home</h3></Link>
@@ -32,7 +35,7 @@ return (
     <div className='quiz-container'>
       {makeCards}
     </div>
-  </>
+  </div>
 )
 
 }

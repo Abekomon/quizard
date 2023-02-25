@@ -1,5 +1,7 @@
 body {
-  background-image: linear-gradient(to right, rgb(125, 123, 123) 0%, lightgrey 50%, rgb(125, 123, 123) 100%);
+  /* background-image: url('/src/assets/images/background-image.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

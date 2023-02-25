@@ -1,3 +1,7 @@
+.quiz-page {
+  background-color: #757779;
+}
+
 .quiz-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
