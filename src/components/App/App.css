@@ -4,13 +4,15 @@
 }
 
 .home-link {
-  text-decoration: none;
   width: 33%;
-  margin: 4% auto 0;
+  display: block;
+  text-decoration: none;
+  margin: 2% auto 0;
 }
 
 .heading {
   margin: 0;
+  width: 100%;
   text-align: center;
   font-size: 80px;
   font-family: monospace;
