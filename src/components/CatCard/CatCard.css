@@ -1,6 +1,6 @@
 .cat-link {
-  width: 23rem;
-  height: 23rem;
+  width: 30%;
+  height: 18rem;
   text-decoration: none;
 }
 
@@ -50,4 +50,24 @@
 
 .cat-23 {
   background-image: url('/src/assets/images/history.png');
+}
+
+@media screen and (max-width: 1000px) {
+  .cat-link {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cat-link {
+    width: 55%;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cat-link {
+    width: 75%;
+    height: 17rem;
+  }
 }

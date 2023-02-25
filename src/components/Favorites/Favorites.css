@@ -1,4 +1,15 @@
+.favorites-page {
+  background-color: #FAEED9;
+}
+
 .no-favorites-msg {
-  margin: 10% auto 0;
   font-size: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .no-favorites-msg {
+    font-size: 30px;
+    margin: 10% 10px;
+  }
 }

@@ -1,5 +1,5 @@
 .quiz-page {
-  background-color: #757779;
+  background-color: #FAEED9;
 }
 
 .quiz-container {
@@ -20,6 +20,10 @@
   .quiz-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .heading {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -27,5 +31,9 @@
     grid-template-columns: repeat(1, 1fr);
     width: 80%;
     margin: auto;
+  }
+
+  .heading {
+    font-size: 35px;
   }
 }

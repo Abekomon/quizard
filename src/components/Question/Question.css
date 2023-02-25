@@ -8,12 +8,15 @@
   border-radius: 5px;
   width: 100%;
   height: 20rem;
-  background-color: #b8b9a6;
-  color: #607582;
+  background-color: #F9C982 ;
 }
 
 .question, .card-container p {
   margin: 0 5px;
+}
+
+.card-container p, .show-answer {
+  font-weight: 600;
 }
 
 .fav-btn {
@@ -22,6 +25,11 @@
   border-radius: 5px;
   border: #c28775 3px;
   background-color: #c2d2cb;
+}
+
+.fav-btn:hover {
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 .show-answer {

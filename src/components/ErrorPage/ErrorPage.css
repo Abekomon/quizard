@@ -1,7 +1,7 @@
 .error-page {
   width: 100%;
   text-align: center;
-  margin-top: 10%;
+  background-color: #FAEED9;
 }
 
 .error-home, .error-home:visited {
