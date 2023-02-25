@@ -10,7 +10,7 @@
 <br />
 
   <a href="https://github.com/jaysmith2022/quizard">
-    <h1>Quizard</h1>
+    <h1 align="center">Quizard</h1>
   </a>
 
 <h3 align="center"></h3>
