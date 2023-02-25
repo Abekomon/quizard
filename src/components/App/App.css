@@ -4,13 +4,15 @@
 }
 
 .home-link {
-  text-decoration: none;
   width: 33%;
-  margin: 4% auto 0;
+  display: block;
+  text-decoration: none;
+  margin: 2% auto 0;
 }
 
 .heading {
   margin: 0;
+  width: 100%;
   text-align: center;
   font-size: 80px;
   font-family: monospace;
@@ -33,7 +35,8 @@ nav a:visited {
 }
 
 .loader{
-  display: inline-block;
+  display: block;
+  margin: auto;
   width: 200px;
   height: 200px;
   margin: 10% auto 0;
@@ -49,6 +52,23 @@ nav a:visited {
   border-color: #fff transparent #fff transparent;
   animation: loader 1.2s linear infinite;
 }
+
+.loading-page {
+  background-color: #FAEED9;
+}
+
+.loading-home {
+  display: block;
+  margin: 10% auto;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.loading-home:visited {
+  color: black;
+}
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);

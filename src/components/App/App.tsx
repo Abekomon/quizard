@@ -95,7 +95,10 @@ class App extends React.Component<AppProps, AppState> {
               <Quiz
                 questions={this.state.quizData}
                 addFavorite={this.addFavorite}
-              /> : <div className="loader"></div>
+              /> : <div className="loading-page">
+                    <div className="loader"></div>
+                    <Link to="/" className="loading-home">Back to Home</Link>
+                   </div>
             )}
           />
           <Route
