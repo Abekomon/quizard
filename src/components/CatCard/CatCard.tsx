@@ -15,5 +15,4 @@ interface CatCardProps {
     );
   };
 
-
 export default CatCard

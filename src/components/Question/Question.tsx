@@ -1,8 +1,6 @@
 import React from 'react'
 import './Question.css'
 
-
-
 interface QuestionProps {
   question: string;
   answer: string;

@@ -32,7 +32,4 @@ interface CategoriesProps {
     }
   }
 
-
-
-
 export default Categories

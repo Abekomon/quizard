@@ -2,7 +2,6 @@ import Question from '../Question/Question'
 import {Link} from 'react-router-dom'
 import './Quiz.css'
 
-
 const Quiz: React.FunctionComponent<any> = props => {
 const makeCards: Array<any> = props.questions.map((
   item: {
@@ -21,8 +20,6 @@ const makeCards: Array<any> = props.questions.map((
   )
 })
 
-
-
 return (
   <div className='quiz-page'>
   <Link to="/" className="home-link">
@@ -37,8 +34,6 @@ return (
     </div>
   </div>
 )
-
 }
-
 
 export default Quiz

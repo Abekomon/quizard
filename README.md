@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-## Contributor
+## Contributors
  [![Anna][Anna-badge]][Anna-url]
  [![Jordan][jordan-badge]][jordan-url]
  [![Ciera][Ciera-badge]][Ciera-url]
@@ -58,8 +58,7 @@
 
 https://user-images.githubusercontent.com/107894408/221605950-ec1b1d3c-f8e3-46ad-a272-2cb67b59ab4a.mp4
 
-In this group project we created a quiz app that allows the user to choose a category. Once a user chooses a category the app moves to a new page that shows 20 question cards with that categories questions. Each card has an add to favorities buttons that allows the user to add an individual card to a favorites page for later viewing. The questions card page has an option to go back to home and an option to view favorites. If the user chooses to view the favorites it will take them to a new page. Each card on the favorites page has a remove button that removes it from the favorites. We used React.js, CSS, HTML, HE, and Cypress for this project. 
-
+For this group project we created and app that allows users to practice their trivia skills to become the ultimate trivia wizard! A user can select their category, and the app populates 20 questions related to the chosen topic. The questions by default hide the answers, and allow the user to show the answer once they have decided on a guess. It also allows the user to favorite a question to be saved on a 'favorites' page. This favorites page stores questions from across any quiz while the user is visiting the site. The user can also remove a card from favorites at any time. If the user decides they want to switch categories, they can return to home, and select a new category.
 
 
 
@@ -73,8 +72,8 @@ In this group project we created a quiz app that allows the user to choose a cat
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-- [![React][React]][react-url]
-
+- [![React][React]][react-url] 
+- [![Typescript]][typescript-url]
 - [![Cypress]][Cypress-url]
 - [![Javascript][javascript.js]][javascript-url]
 - [![CSS][css]][css-url]
@@ -105,9 +104,9 @@ In this group project we created a quiz app that allows the user to choose a cat
    ```
 5. Use the Link that is given in the Terminal & Open in Browser
    ```sh
-   Example: http://localhost:8080/
+   Example: http://localhost:3000/
    ```
-6. Close using control + c
+6. Once finished, close using control + c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,6 +127,8 @@ See the [open issues](https://github.com/jaysmith2022/quizard/issues).
 [Max-url]: https://github.com/Abekomon
 [React]: https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
 [react-url]: https://reactjs.org/
+[Typescript]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
+[typescript-url]: https://www.typescriptlang.org/
 [mocha]: https://img.shields.io/badge/Mocha-FF2D20?style=for-the-badge&logo=mocha&logoColor=white
 [mocha-url]: https://mochajs.org/
 [Cypress]: https://img.shields.io/badge/CYPRESS-000000?style=for-the-badge&logo=cypress&logoColor=purple
