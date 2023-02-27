@@ -1,20 +1,21 @@
 .category-page {
-  background-image: url('/src/assets/images/background-image.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+background-image: url('/src/assets/images/background-image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+/* overflow: auto; */
 }
-
 .cat-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90%;
-  margin: 4% auto;
-  gap: 25px 25px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+width: 90%;
+margin: 4% auto;
+gap: 25px 25px;
 }
-
 @media screen and (max-width: 1290px) {
-  .cat-container {
-    justify-content: center;
-  }
+.cat-container {
+  justify-content: center;
+}
 }
