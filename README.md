@@ -88,6 +88,7 @@ For this group project we created and app that allows users to practice their tr
 ## Getting Started
 
 ### Installation
+## To use the deployed app visit: https://quizard.herokuapp.com/
 
 1. Fork the Repo from the [Repository](https://github.com/jaysmith2022/quizard)
 2. Clone the repo
