@@ -1,39 +1,29 @@
-.app-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .home-link {
   width: 33%;
   display: block;
   text-decoration: none;
-  margin: 2% auto 0;
+  margin: 0 auto 2%;
 }
-
 .heading {
   margin: 0;
   width: 100%;
   text-align: center;
   font-size: 80px;
   font-family: monospace;
-  color: #c28775;
-  -webkit-text-stroke: 2px #201f1f;
+  color: #C28775;
+  -webkit-text-stroke: 2px #201F1F;
 }
-
 nav {
   display: flex;
   justify-content: space-around;
 }
-
 nav a {
   text-decoration: none;
-  color: #201f1f;
+  color: #201F1F;
 }
-
 nav a:visited {
-  color: #201f1f;
+  color: #201F1F;
 }
-
 .loader{
   display: block;
   margin: auto;
@@ -52,11 +42,9 @@ nav a:visited {
   border-color: #fff transparent #fff transparent;
   animation: loader 1.2s linear infinite;
 }
-
 .loading-page {
   background-color: #FAEED9;
 }
-
 .loading-home {
   display: block;
   margin: 10% auto;
@@ -64,11 +52,9 @@ nav a:visited {
   text-align: center;
   text-decoration: none;
 }
-
 .loading-home:visited {
   color: black;
 }
-
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -77,4 +63,3 @@ nav a:visited {
     transform: rotate(360deg);
   }
 }
-
