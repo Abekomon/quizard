@@ -2,7 +2,7 @@ html, body, #root, .app-container, .favorites-page, .error-page, .loading-page, 
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow: auto; */
+  overflow: auto;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

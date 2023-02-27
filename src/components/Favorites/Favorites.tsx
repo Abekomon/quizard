@@ -2,14 +2,12 @@ import Question from '../Question/Question'
 import './Favorites.css'
 import { Link } from 'react-router-dom'
 
-
 interface FavoritesProps {
   questions: any[];
   deleteFav: (id: number) => void;
 }
 
 const Favorites: React.FunctionComponent<FavoritesProps> = (props) => {
-  console.log(props)
   const cards = props.questions.map((item, index) => (
     <Question
       question={item.question}

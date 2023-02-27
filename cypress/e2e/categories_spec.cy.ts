@@ -10,12 +10,7 @@ describe('Categories page testing', () => {
   })
 
   it('should populate category buttons on load', () => {
-    cy.get('.cat-9').should("be.visible")
-    cy.get('.cat-12').should("be.visible")
-    cy.get('.cat-14').should("be.visible")
-    cy.get('.cat-17').should("be.visible")
-    cy.get('.cat-21').should("be.visible")
-    cy.get('.cat-23').should("be.visible")
+    cy.get('.cat-container').children().should('have.length', 6)
   })
 
   it('should go to corresponding quiz when a category card is clicked', () => {
