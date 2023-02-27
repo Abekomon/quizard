@@ -58,7 +58,7 @@
 
 https://user-images.githubusercontent.com/107894408/221605950-ec1b1d3c-f8e3-46ad-a272-2cb67b59ab4a.mp4
 
-
+In this group project we created a quiz app that allows the user to choose a category. Once a user chooses a category the app moves to a new page that shows 20 question cards with that categories questions. Each card has an add to favorities buttons that allows the user to add an individual card to a favorites page for later viewing. The questions card page has an option to go back to home and an option to view favorites. If the user chooses to view the favorites it will take them to a new page. Each card on the favorites page has a remove button that removes it from the favorites. We used React.js, CSS, HTML, HE, and Cypress for this project. 
 
 
 
