@@ -9,7 +9,7 @@
 
 <br />
 
-  <a href="https://github.com/jaysmith2022/quizard">
+  <a href="https://github.com/Abekomon/quizard">
     <h1 align="center">Quizard</h1>
   </a>
 
@@ -18,12 +18,12 @@
   <p align="center">
     Quiz App 
     <br />
-    <a href="https://github.com/jaysmith2022/quizard"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Abekomon/quizard"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jaysmith2022/quizard/issues">Report Bug</a>
+    <a href="https://github.com/Abekomon/quizard/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jaysmith2022/quizard/issues">Request Feature</a>
+    <a href="https://github.com/Abekomon/quizard/issues">Request Feature</a>
   </p>
 </div>
 
@@ -88,12 +88,12 @@ For this group project we created and app that allows users to practice their tr
 ## Getting Started
 
 ### Installation
-## To use the deployed app visit: https://quizard.herokuapp.com/
+## To use the deployed app visit: https://quizard-ten.vercel.app/
 
-1. Fork the Repo from the [Repository](https://github.com/jaysmith2022/quizard)
+1. Fork the Repo from the [Repository](https://github.com/Abekomon/quizard)
 2. Clone the repo
    ```sh
-   git@github.com:jaysmith2022/quizard.git
+   git@github.com:Abekomon/quizard.git
    ```
 3. Install NPM packages
    ```sh
@@ -112,7 +112,7 @@ For this group project we created and app that allows users to practice their tr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-See the [open issues](https://github.com/jaysmith2022/quizard/issues).
+See the [open issues](https://github.com/Abekomon/quizard/issues).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
