@@ -16,7 +16,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, addFavorite, dele
       <h3 className='question'>{question}</h3>
       {!visible && <button className='show-answer' onClick={() => setVisible(true)}>Show Answer</button>}
       {visible && <p className='answer'>{answer}</p>}
-      {(document.URL === "http://localhost:3000/quiz" || document.URL === 'https://quizard.herokuapp.com/quiz')? 
+      {(document.URL === "http://localhost:3000/quiz" || document.URL === 'https://quizard-ten.vercel.app')? 
       <button className='fav-btn' data-cy={`button-${id}`} onClick={() => addFavorite && addFavorite(id)}>Add To Favorites</button> : <button  data-cy={`button-${id}`} onClick={() => deleteFav && deleteFav(id)}>Remove</button>
       }
     </div>
